@@ -1,7 +1,7 @@
 # Python Trading Bot
 
 Uses the Robinhood API to automate trades within a personal Robinhood account.
-Currently implrmented two strategies, one which uses moving average and another which use twitter sentiment analysis. 
+Currently implement two strategies, one which uses moving average and another which use twitter sentiment analysis (using vaderSentiment). 
 
 ``` sh
 export TWITTER_KEY=<consumer-key>
