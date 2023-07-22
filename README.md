@@ -11,6 +11,6 @@ export ROBINHOOD_PW=<robinhood password>
 export ROBINHOOD_MFA=<robinhood mfa code>
 
 # run twitter sentiment analysis to make decision on Apple stock
-python runbot.py Twitter AAPL
+python run_bot.py Twitter AAPL
 ```
 
