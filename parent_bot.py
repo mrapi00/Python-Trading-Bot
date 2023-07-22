@@ -40,7 +40,7 @@ class BaseBot:
 
         return available_funds >= dollar_amount
 
-    def get_current_market_price(self, ticker):
+    def get_market_price(self, ticker):
 
         if not ticker:
             return 0.00
