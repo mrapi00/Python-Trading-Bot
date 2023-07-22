@@ -21,8 +21,8 @@ class TwitterCredentials:
 class RobinhoodCredentials:
     def __init__(self):
         self.user = os.getenv("ROBINHOOD_USER")
-        self.password = os.getenv("ROBINHOOD_PASS")
-        self.mfa_code = os.getenv("ROBINHOOD_MFA_CODE")
+        self.password = os.getenv("ROBINHOOD_PW")
+        self.mfa_code = os.getenv("ROBINHOOD_MFA")
 
     @property
     def empty_credentials(self):
