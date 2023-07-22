@@ -27,7 +27,7 @@ class BaseBot:
 
         return robinhood.account.build_holdings()
 
-    def get_current_cash_stock(self):
+    def get_buying_power(self):
 
         return float(robinhood.profiles.load_account_profile(info="buying_power"))
 
@@ -36,7 +36,7 @@ class BaseBot:
         if not dollar_amount:
             return False
 
-        available_funds = self.get_current_cash_stock()
+        available_funds = self.get_buying_power()
 
         return available_funds >= dollar_amount
 
@@ -125,7 +125,7 @@ class BaseBot:
         if not ticker:
             return {}
 
-        available_funds = self.get_current_cash_stock()
+        available_funds = self.get_buying_power()
 
         return self.place_buy_order(ticker, available_funds)
 

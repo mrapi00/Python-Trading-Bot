@@ -1,3 +1,7 @@
+# uses a moving average strategy that compares the average
+# from past 200 days to past 20 days, to make decision
+# to buy or sell a stock
+
 import pandas as pd
 from parent_bot import Decision, TradeBot
 
